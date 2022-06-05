@@ -1,13 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "func.h"
+#include "list.h"
 
-
-int main()
-{
-	intList mylist = intListAbstractor();
-	int list[4] = {2, 5, 7 , 8};
-	mylist.list = list;
-	mylist.size = sizeof(list) / sizeof(list[0]);
-	exit(0);
+int main(int argc, char *argv[]) {
+	int temp[10] = {2, 3, 4, 5, 6, 7, 8, 9, 5, 3};
+	int *myList = initList(temp, 10);
+	listPrint(myList, 10);
+	printf("\n");
+	insert(65, 6, &myList, 10);
+	listPrint(myList, 11);
 }
