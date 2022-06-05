@@ -1,1 +1,0 @@
-../linuxC-instrument/src/pause.cpp
