@@ -6,6 +6,5 @@ int main(int argc, char *argv[]) {
 	int *myList = initList(temp, 10);
 	listPrint(myList, 10);
 	printf("\n");
-	insert(65, 6, &myList, 10);
-	listPrint(myList, 11);
+	printf("%d\n", (int)search(2, myList, 10));
 }
